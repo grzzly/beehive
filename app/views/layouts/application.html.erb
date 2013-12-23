@@ -7,8 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="#" class="navbar-brand"> Beehive </a>
+				<ul class="nav navbar-nav">
+            		<li class="active"><%= link_to "All statuses", statuses_path %></li>
+          		</ul>
+			</div>
+		</div>
+	</nav>
 
-<%= yield %>
-
+	<div class="container">
+		<%= yield %>
+	</div>
 </body>
 </html>
